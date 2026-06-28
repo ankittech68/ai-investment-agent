@@ -7,11 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-  origin: [
-    'https://ai-investment-agent-git-main-ankits-projects-a57d01bf.vercel.app',
-    'https://ai-investment-agent-eight-lyart.vercel.app'
-  ],
-  methods: ['GET', 'POST'],
+  origin: true,
   credentials: true
 }));
 
